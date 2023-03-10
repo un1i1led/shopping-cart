@@ -28,6 +28,9 @@ const PlantDetail = () => {
                 </div>
                 <div className='detail-right'>
                     <h1>{plant?.name}</h1>
+                    <div className='plant-desc-div'>
+                        <p>{plant?.description}</p>
+                    </div>
                     <div className='detail-btns'>
                         <button className='cart-btn' id='add-cart'>Add To Cart</button>
                         <img src={minus} className='cart-btn plus-minus'
