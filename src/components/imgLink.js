@@ -32,5 +32,6 @@ export {
     yellowPot,
     imgs,
     plus,
-    minus
+    minus,
+    cart
 }

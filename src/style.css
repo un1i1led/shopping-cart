@@ -107,3 +107,43 @@ a li:hover {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.detail-info {
+    margin: 50px 15% 0 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.detail-img {
+    height: 400px;
+    width: 300px;
+}
+
+.detail-left {
+    display: flex;
+    justify-content: center;
+}
+
+.detail-right h1 {
+    margin-top: 0;
+    font-size: 50px;
+}
+
+.detail-btns {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#add-cart {
+    height: 50px;
+    width: 300px;
+}
+
+.plus-minus {
+    height: 30px;
+}
+
+.cart-btn {
+    cursor: pointer;
+}
