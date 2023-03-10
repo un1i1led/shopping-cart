@@ -6,6 +6,9 @@ import longLeaf from '../img/longLeaf.jpg';
 import thinPot from '../img/thinPot.jpg';
 import whiteRocks from '../img/whiteRocks.jpg';
 import yellowPot from '../img/yellowPot.jpg';
+import plus from '../img/add.png';
+import minus from '../img/minus.png';
+import cart from '../img/cart.png';
 
 const imgs = [
         {link: bigLeaf, name: 'Big Leaf', id:'plant1'},
@@ -27,5 +30,7 @@ export {
     thinPot,
     whiteRocks,
     yellowPot,
-    imgs
+    imgs,
+    plus,
+    minus
 }
