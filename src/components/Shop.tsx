@@ -1,6 +1,5 @@
 import Card from './Card';
 import { Link } from 'react-router-dom';
-import { bigLeaf, darkPot, holeyPlant, largeLeaf, longLeaf, thinPot, whiteRocks, yellowPot } from './imgLink';
 import { imgs } from './imgLink';
 
 const Shop = () => {
