@@ -118,7 +118,10 @@ a li:hover {
 }
 
 .detail-info {
-    margin: 50px 15% 0 15%;
+    margin-top: 50px;
+    margin-left: max(15%, 0%);
+    margin-right: max(15%, 0%);
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -155,4 +158,8 @@ a li:hover {
 
 .cart-btn {
     cursor: pointer;
+}
+
+.plant-desc-div p {
+    font-family: 'Noto Serif Lao', serif;
 }
