@@ -153,7 +153,11 @@ a li:hover {
 }
 
 .plus-minus {
-    height: 30px;
+    height: 20px;
+}
+
+.plus-minus:last-of-type {
+    height: 17px;
 }
 
 .cart-btn {
@@ -162,4 +166,44 @@ a li:hover {
 
 .plant-desc-div p {
     font-family: 'Noto Serif Lao', serif;
+}
+
+.cart-main {
+    margin: 50px 15% 0 15%;
+    font-family: 'Noto Serif Lao', serif;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+.cart-item {
+    display: flex;
+    gap: 10px;
+}
+
+.item-left img {
+    height: 200px;
+    width: 150px;
+}
+
+.item-quantity {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    width: 80px;
+}
+
+.item-quantity p {
+    margin: 0;
+}
+
+.p-plus-minus {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.p-plus-minus:first-of-type {
+    font-size: 24px;
 }
