@@ -54,6 +54,7 @@ const Cart = (props: CartProps) => {
             <div className='cart-right'>
                 <h3>Total</h3>
                 <p>{calculateTotal(props)}$</p>
+                <button id='btn-checkout' className='btn-big'>Proceed to Checkout</button>
             </div>
         </div>
     )

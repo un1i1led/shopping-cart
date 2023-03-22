@@ -207,3 +207,9 @@ a li:hover {
 .p-plus-minus:first-of-type {
     font-size: 24px;
 }
+
+#btn-checkout {
+    margin: 0;
+    width: 200px;
+    height: 100px;   
+}
