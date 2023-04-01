@@ -70,10 +70,10 @@ const PlantDetail = (props: PlantDetailProps) => {
                     </div>
                     <div className='detail-btns'>
                         <button className='cart-btn' id='add-cart' onClick={() => {addToCart(itemCount)}}>Add To Cart</button>
-                        <img src={minus} className='cart-btn plus-minus'
+                        <img src={minus} className='plus-minus'
                         alt='reduce item count' onClick={() => {changeAmount('-')}}/>
                         <p>{itemCount}</p>
-                        <img src={plus} className='cart-btn plus-minus'
+                        <img src={plus} className='plus-minus'
                         alt='increase item count' onClick={() => {changeAmount('+')}}/>
                     </div>
                 </div>
