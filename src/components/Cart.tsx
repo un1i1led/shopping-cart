@@ -12,12 +12,19 @@ type CartProps = {
     setItems: Function
 }
 
-const changeCount = (props:CartProps, id: string, input: string) => {
+const changeCount = (props:CartProps, id: string, input: string): Boolean => {
+    const notItem = props.items.filter((item) => id !== item.id);
     const itemToChange = props.items.filter((item) => id === item.id)[0];
     const indexItem = props.items.indexOf(itemToChange);
 
-    itemToChange.count = input === '+' ? itemToChange.count + 1 : itemToChange.count - 1;
     let newArr: Array<PlantType> = [];
+
+    itemToChange.count = input === '+' ? itemToChange.count + 1 : itemToChange.count - 1;
+    if (itemToChange.count <= 0) {
+        newArr = [...notItem];
+        props.setItems(newArr);
+        return false;
+    }
 
     for (let i = 0; i < props.items.length; i++) {
         if (i === indexItem) {
@@ -28,7 +35,7 @@ const changeCount = (props:CartProps, id: string, input: string) => {
     }
 
     props.setItems(newArr);
-
+    return true;
 }
 
 const createCards = (props: CartProps) => {
