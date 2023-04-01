@@ -64,7 +64,8 @@ a li:hover {
     font-size: 100px;
 }
 
-.btn-big {
+.btn-big,
+.cart-btn {
     margin-left: 40px;
     font-family: 'Noto Serif Lao', serif;
     font-weight: 600;
@@ -78,7 +79,8 @@ a li:hover {
     transition: 0.3s;
 }
 
-.btn-big:hover {
+.btn-big:hover,
+.cart-btn:hover {
     background-color: rgb(70, 91, 52);
     color: white;
 }
@@ -150,10 +152,12 @@ a li:hover {
 #add-cart {
     height: 50px;
     width: 300px;
+    margin: 0;
 }
 
 .plus-minus {
     height: 20px;
+    cursor: pointer;
 }
 
 .plus-minus:last-of-type {
