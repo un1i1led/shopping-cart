@@ -12,6 +12,25 @@ type CartProps = {
     setItems: Function
 }
 
+const changeCount = (props:CartProps, id: string, input: string) => {
+    const itemToChange = props.items.filter((item) => id === item.id)[0];
+    const indexItem = props.items.indexOf(itemToChange);
+
+    itemToChange.count = input === '+' ? itemToChange.count + 1 : itemToChange.count - 1;
+    let newArr: Array<PlantType> = [];
+
+    for (let i = 0; i < props.items.length; i++) {
+        if (i === indexItem) {
+            newArr.push(itemToChange);
+        } else {
+            newArr.push(props.items[i]);
+        }
+    }
+
+    props.setItems(newArr);
+
+}
+
 const createCards = (props: CartProps) => {
     return (
         props.items.map((data, key) => {
@@ -25,9 +44,9 @@ const createCards = (props: CartProps) => {
                         <div className='item-right-small'>
                             <p>${data.cost}</p>
                             <div className='item-quantity'>
-                                <p className='p-plus-minus'>-</p>
+                                <p className='p-plus-minus' onClick={() => changeCount(props, data.id, '-')}>-</p>
                                 <p>{data.count}</p>
-                                <p className='p-plus-minus'>+</p>
+                                <p className='p-plus-minus' onClick={() => changeCount(props, data.id, '+')}>+</p>
                             </div>
                         </div>
                     </div>
