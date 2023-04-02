@@ -38,6 +38,11 @@ const changeCount = (props:CartProps, id: string, input: string): Boolean => {
     return true;
 }
 
+const removeItem = (props:CartProps, id: string) => {
+    const notItem = props.items.filter((item) => id !== item.id);
+    props.setItems(notItem);
+}
+
 const createCards = (props: CartProps) => {
     return (
         props.items.map((data, key) => {
@@ -55,6 +60,7 @@ const createCards = (props: CartProps) => {
                                 <p>{data.count}</p>
                                 <p className='p-plus-minus' onClick={() => changeCount(props, data.id, '+')}>+</p>
                             </div>
+                            <button className='cart-remove' onClick={() => removeItem(props, data.id)}>Remove</button>
                         </div>
                     </div>
                 </div>
