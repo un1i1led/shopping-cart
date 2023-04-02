@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.6d28c5f7.css",
-    "main.js": "/shopping-cart/static/js/main.45ba8127.js",
+    "main.js": "/shopping-cart/static/js/main.3038b22f.js",
     "static/media/sarah-dorweiler-x2Tmfd1-SgA-unsplash.jpg": "/shopping-cart/static/media/sarah-dorweiler-x2Tmfd1-SgA-unsplash.b435a862a5096002491b.jpg",
     "static/media/darkPot.jpg": "/shopping-cart/static/media/darkPot.96f5d69af61b11f5edba.jpg",
     "static/media/holeyPlant.jpg": "/shopping-cart/static/media/holeyPlant.0488078c6ad923dd61f4.jpg",
@@ -14,10 +14,10 @@
     "static/media/cart.png": "/shopping-cart/static/media/cart.8e3433c1f346fa7279b8.png",
     "index.html": "/shopping-cart/index.html",
     "main.6d28c5f7.css.map": "/shopping-cart/static/css/main.6d28c5f7.css.map",
-    "main.45ba8127.js.map": "/shopping-cart/static/js/main.45ba8127.js.map"
+    "main.3038b22f.js.map": "/shopping-cart/static/js/main.3038b22f.js.map"
   },
   "entrypoints": [
     "static/css/main.6d28c5f7.css",
-    "static/js/main.45ba8127.js"
+    "static/js/main.3038b22f.js"
   ]
 }
