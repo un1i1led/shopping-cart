@@ -15,7 +15,7 @@ const App = () => {
       <div className='App'>
         <Nav items={cartItems}/>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/shopping-cart' element={<Home/>}/>
           <Route path='/shop' element={<Shop/>}/>
           <Route path='/shop/:id' element={<PlantDetail
           items={cartItems} setItems={setCartItems}/>}/>
