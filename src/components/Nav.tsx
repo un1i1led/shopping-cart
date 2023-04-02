@@ -18,7 +18,7 @@ const Nav = (props: NavProps) => {
         if (props.items.length > 0) {
             let sum = props.items.reduce((acc, currentValue) => acc + currentValue.count, 0);
             return (
-                <p>{sum}</p>
+                <p id='sum'>{sum}</p>
             )
         }
     }
@@ -31,9 +31,6 @@ const Nav = (props: NavProps) => {
                 </Link>
                 <Link to='/shop'>
                     <li>Shop</li>
-                </Link>
-                <Link to='/about'>
-                    <li>About</li>
                 </Link>
                 <Link to='/cart'>
                     <li id='li-cart'>
