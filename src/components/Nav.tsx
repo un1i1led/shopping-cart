@@ -26,7 +26,7 @@ const Nav = (props: NavProps) => {
     return (
         <nav>
             <ul>
-                <Link to='/'>
+                <Link to='/shopping-cart'>
                     <li>Home</li>
                 </Link>
                 <Link to='/shop'>
